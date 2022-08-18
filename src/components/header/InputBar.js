@@ -1,8 +1,6 @@
 const InputBar = () => {
     return(
-        <div className="wrapper-search">
-            <input type="text" placeholder="Search here..." />
-        </div>
+        <input className="search" type="text" placeholder="Search here..." />
     )
 }
 

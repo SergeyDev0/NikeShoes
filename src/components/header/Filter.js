@@ -2,7 +2,7 @@ import filterIcon from '../../icons/filter.svg';
 
 const Filter = () => {
     return(
-        <button className="header-filter">
+        <button className="filter">
             <img src={filterIcon} alt="filter" />
         </button>
     )
