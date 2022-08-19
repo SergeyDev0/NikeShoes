@@ -1,12 +1,14 @@
-import React from "react"
-// import { Routes, Route } from "react-router-dom"
-import Home from './pages/Home';
-// import Cart from './pages/Cart';
-// import Product from './pages/Product';
+import Header from './components/header/Header';
+import Popular from './components/popular/Popular';
+import NewItems from './components/newItems/NewItems';
 
 const App = () => {
   return(
-    <Home />
+    <div>
+        <Header />
+        <Popular />
+        <NewItems />
+    </div>
   )
 }
 
