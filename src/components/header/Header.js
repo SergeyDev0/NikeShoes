@@ -1,4 +1,4 @@
-import Menu from './Menu';
+import Cart from './Cart';
 import Logo from './Logo';
 import Notifications from './Notifications';
 import InputBar from './InputBar';
@@ -8,7 +8,7 @@ const Header = () => {
     return(
         <header className='header'>
             <div className="header-top">
-                <Menu />
+                <Cart />
                 <Logo />
                 <Notifications />
             </div>

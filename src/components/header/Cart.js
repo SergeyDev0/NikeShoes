@@ -1,6 +1,6 @@
 import menuIcon from '../../icons/menu.svg'
 
-const Menu = () => {
+const Cart = () => {
     return(
         <button className="header-menu">
             <img src={menuIcon} alt="menu" />
@@ -8,4 +8,4 @@ const Menu = () => {
     )
 }
 
-export default Menu;
+export default Cart;
