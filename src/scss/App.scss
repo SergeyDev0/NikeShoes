@@ -148,8 +148,12 @@ body{
                     -ms-border-radius: 80px 10px 10px 10px;
                     -o-border-radius: 80px 10px 10px 10px;
                     z-index: -1;
+                    background-color: var(--white-sky);
+                }
+
+                &:first-child::after{
                     background-color: var(--sky);
-}
+                }
 
                 &::before{
                     content: ' ';
