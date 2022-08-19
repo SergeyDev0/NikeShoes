@@ -130,6 +130,8 @@ body{
                 &-img{
                     margin-top: 29px;
                     pointer-events: none;
+                    width: 210px;
+                    height: 145px;
                 }
 
                 &::after{
@@ -146,7 +148,7 @@ body{
                     -ms-border-radius: 80px 10px 10px 10px;
                     -o-border-radius: 80px 10px 10px 10px;
                     z-index: -1;
-                    background-color: gray;
+                    background-color: var(--sky);
 }
 
                 &::before{
