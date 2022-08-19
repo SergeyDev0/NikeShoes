@@ -5,6 +5,7 @@ body{
     background: #F8F8F8;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    color: var(--black);
 
     header {
         width: 100%;
@@ -78,6 +79,7 @@ body{
     
     .popular {
         width: 100%;
+        margin-bottom: 30px;
     
         &-header {
             width: 100%;
@@ -171,7 +173,7 @@ body{
                     -moz-border-radius: var(--border);
                     -ms-border-radius: var(--border);
                     -o-border-radius: var(--border);
-}
+                }
 
                 .item-header {
                     display: flex;
@@ -186,23 +188,90 @@ body{
                     align-items: center;
                 }
 
-                .price{
+                .price {
                     font-size: 22px;
                     font-weight: 700;
                     color: var(--black);
                 }
 
-                .title{
+                .title {
                     font-size: 18px;
                     font-weight: 500;
                     color: var(--black);
                 }
 
-                .popular-date{
+                .popular-date {
                     font-size: 12px;
                     font-weight: 300;
                     margin-bottom: 12px;
                 }
+            }
+        }
+    }
+
+    .new-items {
+        display: flex;
+        padding: 20px;
+        background-color: var(--light-gray);
+        border-radius: var(--border);
+        -webkit-border-radius: var(--border);
+        -moz-border-radius: var(--border);
+        -ms-border-radius: var(--border);
+        -o-border-radius: var(--border);
+
+        & > .title{
+            writing-mode: tb-rl;
+            transform:rotate(180deg);
+            text-align: end;
+            margin-top: 25px;
+            margin-right: 6%;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .slides{
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .item-card {
+            display: flex;
+            width: 257px;
+            padding: 10px;
+            background-color: white;
+            border-radius: var(--border);
+            box-sizing: content-box;
+
+            &:not(:last-child){
+                margin-bottom: 16px;
+            }
+
+            .wrapper__item-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 9px 0 9px 10px;
+
+                .price {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+
+                .title {
+                    font-style: 14px;
+                    font-weight: 500;
+                }
+            }
+
+            .wrapper__item-panel{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                flex-grow: 1;
+                align-items: flex-end;
+                margin: 9px 6px 9px 0;
             }
         }
     }

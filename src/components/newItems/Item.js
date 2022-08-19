@@ -3,7 +3,7 @@ import addCartNewIcon from '../../icons/addCartNew.svg';
 const NewItem = (props) => {
     return(
         <div className="item-card">
-            <img src={props.src} alt={props.alt} className="item-img" />
+            <img src={props.img} alt={props.alt} className="item-img" />
             <div className="wrapper__item-info">
                 <h5 className="title">{props.title}</h5>
                 <h4 className="price">{props.price}</h4>

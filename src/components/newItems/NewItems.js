@@ -42,7 +42,7 @@ export default function Items() {
         },
     ]);
     return (
-        <div className="popular">
+        <div className="new-items">
             <HeaderNewItems />
             <ul className="slides">
                 {items.map((item) => {
@@ -51,7 +51,8 @@ export default function Items() {
                         key={item.key} 
                         img={item.img} 
                         alt={item.title} 
-                        title={item.title} />
+                        title={item.title}
+                        price={item.price} />
                     )
                 })}
             </ul>
