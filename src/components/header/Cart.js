@@ -1,9 +1,10 @@
+import React from 'react';
 import { Link } from "react-router-dom";
 import menuIcon from '../../icons/menu.svg'
 
 const Cart = () => {
-    return(
-        <Link to="/cart">
+    return (
+        <Link to='cart'>
             <button className="header-menu">
                 <img src={menuIcon} alt="menu" />
             </button>

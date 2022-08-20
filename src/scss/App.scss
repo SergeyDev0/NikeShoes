@@ -29,6 +29,11 @@ body{
             height: 13px;
         }
 
+        .header__cart-logo{
+            font-size: 20px;
+            font-weight: 500;
+        }
+
         .header-notifications {
             width: 18px;
             height: 20px;
@@ -124,6 +129,7 @@ body{
                 -o-border-radius: var(--border);
                 user-select: none;
                 scroll-snap-align: start;
+                border: 2px solid #fcfcfc;
 
                 &:not(:last-child){
                     margin-right: 16px;
