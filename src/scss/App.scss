@@ -265,7 +265,7 @@ body{
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                margin: 9px 0 9px 10px;
+                margin: 9px 9px 9px 10px;
 
                 .price {
                     font-size: 18px;
@@ -273,7 +273,7 @@ body{
                 }
 
                 .title {
-                    font-style: 14px;
+                    font-size: 14px;
                     font-weight: 500;
                 }
             }
