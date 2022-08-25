@@ -1,8 +1,10 @@
 import React from "react";
 import HeaderPopular from './HeaderPopular';
 import CardItem from './CardItem';
+import { CartContext } from './../../App';
 
 export default function Cards() {
+    const { onAddToCart } = React.useContext(CartContext);
     const [products, setProducts] = React.useState([]);
 
     React.useEffect(() => {
@@ -22,11 +24,12 @@ export default function Cards() {
                 {products.map((product) => {
                     return (
                         <CardItem 
-                        key={product.key} 
                         img={product.img} 
                         alt={product.title} 
                         title={product.title} 
-                        price={product.price} />
+                        price={product.price}
+                        ratting={product.ratting}
+                        onPlus={(obj) => {onAddToCart(obj)}} />
                         )
                 })}
             </ul>

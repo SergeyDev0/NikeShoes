@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 body{
-    padding: 20px;
-    background: #F8F8F8;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: var(--black);
+    background: #F8F8F8;
+    position: relative;
+
+    #root {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        padding: 20px;
+    }
 
     header {
         width: 100%;
@@ -250,7 +257,7 @@ body{
             border-radius: var(--border);
             box-sizing: content-box;
 
-            &:not(:last-child){
+            &:not(:last-child) {
                 margin-bottom: 16px;
             }
 
@@ -271,13 +278,84 @@ body{
                 }
             }
 
-            .wrapper__item-panel{
+            .wrapper__item-panel {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 flex-grow: 1;
                 align-items: flex-end;
                 margin: 9px 6px 9px 0;
+            }
+        }
+    }
+
+    .cart-empty {
+        flex-grow: 1;
+        font-size: 22px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cart-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        .item {
+            display: flex;
+            width: 310px;
+            height: 90px;
+            padding: 15px 10px 15px 15px;
+            box-sizing: content-box;
+            background-color: #fff;
+            border-radius: var(--border);
+            
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+
+            img {
+                width: 120px;
+                height: 100%;
+                background-color: #F4F6F4;
+                border-radius: var(--border);
+            }
+
+            .wrapper-content {
+                margin-left: 20px;
+
+                .title {
+                    font-size: 18px;
+                    font-weight: 400;
+                    margin-bottom: 12px;
+                }
+
+                .ratting {
+                    font-size: 14px;
+                    font-weight: 400;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        width: 12px;
+                        height: 12px;
+                        margin-left: 5px;
+                    }
+                }
+
+                .row {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 27px;
+
+                    .price {
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+                }
             }
         }
     }

@@ -1,12 +1,20 @@
+import React from 'react';
 import addCartIcon from '../../icons/addCart.svg'
 
-const CardItem = (props) => {
+const CardItem = ({ img, alt, title, price, ratting, onPlus }) => {
+    const [isAdded, setIsAdded] = React.useState(false);
+
+    const onClickPlus = () => {
+        onPlus({ img, alt, title, price, ratting });
+        setIsAdded(!isAdded);
+    }
+
     return(
             <li className="slide">
                 <div className="item-header">
                     <div className="col">
                         <h4 className="popular-date">Top of the month</h4>
-                        <h3 className="title">{props.title}</h3>
+                        <h3 className="title">{title}</h3>
                     </div>
                     <button className="like">
                         <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -15,10 +23,10 @@ const CardItem = (props) => {
                         </svg>
                     </button>
                 </div>
-                <img src={props.img} alt={props.alt} className="slide-img" />
+                <img src={img} alt={alt} className="slide-img" />
                 <div className="row">
-                    <h2 className="price">{props.price}</h2>
-                    <button className="add-cart">
+                    <h2 className="price">{price}</h2>
+                    <button className="add-cart" onClick={onClickPlus}>
                         <img src={addCartIcon} alt="add cart" />
                     </button>
                 </div>

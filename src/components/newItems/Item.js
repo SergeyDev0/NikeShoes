@@ -1,12 +1,12 @@
 import React from 'react';
 import addCartNewIcon from '../../icons/addCartNew.svg';
 
-const NewItem = ({ img, alt, title, price, onPlus }) => {
+const NewItem = ({ img, alt, title, price, ratting, onPlus }) => {
 
     const [isAdded, setIsAdded] = React.useState(false);
 
     const onClickPlus = () => {
-        onPlus({ img, alt, title, price });
+        onPlus({ img, alt, title, price, ratting });
         setIsAdded(!isAdded);
     }
 

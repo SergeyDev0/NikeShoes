@@ -4,11 +4,11 @@ import NewItems from '../components/newItems/NewItems';
 
 const Home = () => {
   return(
-    <div>
+    <>
         <Header />
         <Popular />
         <NewItems />
-    </div>
+    </>
   )
 }
 
