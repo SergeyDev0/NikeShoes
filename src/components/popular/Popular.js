@@ -1,46 +1,20 @@
-import { useState } from "react";
+import React from "react";
 import HeaderPopular from './HeaderPopular';
 import CardItem from './CardItem';
 
 export default function Cards() {
-    const [products] = useState([
-        {
-            key   : 'c92c0babdc764d8674bca14a55d867d',
-            title : 'Air Max 270 G',
-            img   : '/img/popular-1.png',
-            price : '$75.50',
-        },
-        {
-            key   : 'ef39fbf9170b58787ce4e574db9d842',
-            title : 'Nike Power',
-            img   : '/img/popular-2.png',
-            price : '$88.50',
-        },
-        {
-            key   : 'c92c0babdc764d8674bcea14a55d86',
-            title : 'Air Max 270 G',
-            img   : '/img/popular-1.png',
-            price : '$75.50',
-        },
-        {
-            key   : 'ef39fbf69170b58787ce474db9d842',
-            title : 'Nike Power',
-            img   : '/img/popular-2.png',
-            price : '$88.50',
-        },
-        {
-            key   : 'c92c0babdc764d8674bcea14ad867d',
-            title : 'Air Max 270 G',
-            img   : '/img/popular-1.png',
-            price : '$75.50',
-        },
-        {
-            key   : 'ef39fbf69158787ce4e574db9d842',
-            title : 'Nike Power',
-            img   : '/img/popular-2.png',
-            price : '$88.50',
-        },
-    ]);
+    const [products, setProducts] = React.useState([]);
+
+    React.useEffect(() => {
+        fetch('https://63064d8cdde73c0f8457f06d.mockapi.io/items')
+        .then((res) => {
+            return res.json();
+        })
+        .then(json => {
+            setProducts(json);
+        });
+    }, []);
+
     return (
         <div className="popular">
             <HeaderPopular />
