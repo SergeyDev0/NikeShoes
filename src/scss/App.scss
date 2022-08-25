@@ -6,12 +6,13 @@ body{
     color: var(--black);
     background: #F8F8F8;
     position: relative;
+    min-height: 100vh;
 
     #root {
         display: flex;
         flex-direction: column;
-        min-height: 100vh;
-        margin: 20px;
+        min-height: calc(100vh - 56px);
+        padding: 20px;
     }
 
     header {
@@ -290,14 +291,13 @@ body{
     }
 
     .cart-empty {
-        position: absolute;
         font-size: 22px;
         font-weight: 600;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
         white-space: nowrap;
-        color: red;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .cart-items {
