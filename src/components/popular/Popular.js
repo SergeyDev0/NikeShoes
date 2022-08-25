@@ -21,9 +21,10 @@ export default function Cards() {
         <div className="popular">
             <HeaderPopular />
             <ul className="slides">
-                {products.map((product) => {
+                {products.map((product, index) => {
                     return (
                         <CardItem 
+                        key={index}
                         img={product.img} 
                         alt={product.title} 
                         title={product.title} 

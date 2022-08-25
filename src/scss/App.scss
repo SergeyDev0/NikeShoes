@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
+html, body, #root {
+    height: 100%;
+}
 body{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: var(--black);
     background: #F8F8F8;
     position: relative;
-    min-height: 100vh;
+    padding: 20px;
 
     #root {
         display: flex;
         flex-direction: column;
-        min-height: calc(100vh - 56px);
-        padding: 20px;
     }
 
     header {

@@ -22,9 +22,10 @@ export default function Items() {
         <div className="new-items">
             <HeaderNewItems />
             <ul className="slides">
-                {products.map((item) => {
+                {products.map((item, index) => {
                     return (
                         <Item
+                        key={index}
                         img={item.img} 
                         alt={item.title} 
                         title={item.title}
