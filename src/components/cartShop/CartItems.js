@@ -9,7 +9,7 @@ export default function CartItems() {
                 {cartItems.map((item) => {
                     return (
                         <div className="item">
-                            <img src={item.img} alt={item.alt} />
+                            <img width={120} height={90} src={item.img} alt={item.alt} />
                             <div className="wrapper-content">
                                 <div className="wrapper-info">
                                     <h3 className="title">{item.title}</h3>

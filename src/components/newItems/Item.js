@@ -12,7 +12,7 @@ const NewItem = ({ img, alt, title, price, ratting, onPlus }) => {
 
     return(
         <div className="item-card">
-            <img src={img} alt={alt} className="item-img" />
+            <img width={106} height={80} src={img} alt={alt} className="item-img" />
             <div className="wrapper__item-info">
                 <h5 className="title">{title}</h5>
                 <h4 className="price">{price}</h4>

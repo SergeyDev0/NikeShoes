@@ -146,8 +146,6 @@ body{
                 &-img{
                     margin-top: 29px;
                     pointer-events: none;
-                    width: 210px;
-                    height: 145px;
                 }
 
                 &::after{
@@ -320,8 +318,6 @@ body{
             }
 
             img {
-                width: 120px;
-                height: 100%;
                 background-color: #F4F6F4;
                 border-radius: var(--border);
             }

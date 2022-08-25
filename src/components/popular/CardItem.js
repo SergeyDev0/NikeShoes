@@ -23,7 +23,7 @@ const CardItem = ({ img, alt, title, price, ratting, onPlus }) => {
                         </svg>
                     </button>
                 </div>
-                <img src={img} alt={alt} className="slide-img" />
+                <img width={210} height={145} src={img} alt={alt} className="slide-img" />
                 <div className="row">
                     <h2 className="price">{price}</h2>
                     <button className="add-cart" onClick={onClickPlus}>
