@@ -4,7 +4,7 @@ import CardItem from './CardItem';
 import { CartContext } from './../../App';
 
 export default function Cards() {
-    const { onAddToCart } = React.useContext(CartContext);
+    const { onAddToCart, showProduct } = React.useContext(CartContext);
     const [products, setProducts] = React.useState([]);
 
     React.useEffect(() => {
@@ -30,7 +30,8 @@ export default function Cards() {
                         title={product.title} 
                         price={product.price}
                         ratting={product.ratting}
-                        onPlus={(obj) => {onAddToCart(obj)}} />
+                        onPlus={(obj) => {onAddToCart(obj)}}
+                        onProduct={(obj) => {showProduct(obj)}} />
                         )
                 })}
             </ul>
