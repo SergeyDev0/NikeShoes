@@ -1,6 +1,6 @@
 const EmptyCart = () => {
     return (
-        <h2 className="cart-empty">Тут пока ничего нет</h2>
+        <h2 className="cart-empty">Тут пока ничего нет&nbsp;&nbsp;:(</h2>
     )
 }
 

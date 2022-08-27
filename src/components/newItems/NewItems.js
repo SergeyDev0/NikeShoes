@@ -1,7 +1,7 @@
 import React from 'react'
 import HeaderNewItems from './HeaderNewItems';
-import Item from './Item.js'; 
 import { CartContext } from './../../App';
+import Item from './Item.js'; 
 
 export default function Items() {
     const { onAddToCart } = React.useContext(CartContext);

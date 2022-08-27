@@ -8,6 +8,7 @@ export const CartContext = React.createContext();
 
 const App = () => {
   const [cartItems, setCartItems] = React.useState([]);
+  const [counter, setCounter] = React.useState(1);
 
   function onAddToCart(obj) {
     setCartItems([...cartItems, obj]);
@@ -15,10 +16,33 @@ const App = () => {
 
   function clearCart() {
     setCartItems([]);
+    setCounter(1);
+  }
+
+  function decrementCounter() {
+    setCounter(counter - 1);
+
+    if(counter <= 1){
+        setCounter(1);
+    }
+  }
+
+  function incrementCounter() {
+      setCounter(counter + 1);
+      if(counter >= 99){
+          setCounter(99);
+      }
   }
 
   return(
-      <CartContext.Provider value={{cartItems, onAddToCart, clearCart}}>
+      <CartContext.Provider value={{
+        cartItems,
+        onAddToCart,
+        clearCart,
+        decrementCounter,
+        incrementCounter,
+        counter
+      }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="cart" element={<Cart />} />

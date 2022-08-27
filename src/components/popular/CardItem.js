@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import addCartIcon from '../../icons/addCart.svg'
 
 const CardItem = ({ img, alt, title, price, ratting, onPlus }) => {
@@ -10,7 +11,7 @@ const CardItem = ({ img, alt, title, price, ratting, onPlus }) => {
     }
 
     return(
-            <li className="slide">
+            <Link to="product" className="slide">
                 <div className="item-header">
                     <div className="col">
                         <h4 className="popular-date">Top of the month</h4>
@@ -25,12 +26,16 @@ const CardItem = ({ img, alt, title, price, ratting, onPlus }) => {
                 </div>
                 <img width={210} height={145} src={img} alt={alt} className="slide-img" />
                 <div className="row">
-                    <h2 className="price">{price}</h2>
-                    <button className="add-cart" onClick={onClickPlus}>
+                    <h2 className="price">${price}</h2>
+                    <button className="add-cart" 
+                    onClick={event => {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    onClickPlus()}} >
                         <img src={addCartIcon} alt="add cart" />
                     </button>
                 </div>
-            </li>
+            </Link>
     )
 }
 

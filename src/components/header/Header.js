@@ -8,6 +8,7 @@ import Filter from './Filter';
 import Back from './Back';
 import CartLogo from './CartLogo';
 import ClearCart from './ClearCart';
+import Like from './Like';
 
 const Header = () => {
     const {pathname} = useLocation();
@@ -42,7 +43,7 @@ const Header = () => {
                 <div className="header-top">
                     <Back />
                     <Logo />
-                    <Notifications />
+                    <Like />
                 </div>
             </header>
         )
