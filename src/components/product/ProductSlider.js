@@ -11,7 +11,7 @@ const ProductSlider = (img, alt) => {
         <div>
             {[productItem].map((item) => {
                 return (
-                <div className="product__wrapper-slider">
+                <div className="product-profile product__wrapper-slider">
                     <Swiper className='product-slider'
                     modules={[Pagination, Autoplay]}
                     pagination={{ clickable: true }}

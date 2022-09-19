@@ -486,5 +486,30 @@ body{
     .like.active path {
         fill: var(--black);
     }
+
+    .product-slider {
+        height: 260px;
+        margin-top: 40px;
+    }
+
+    .product__profile-info {
+        width: 100%;
+        margin-top: 4rem;
+
+        .row {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+            .product-title {
+                font-size: 28px;
+                font-weight: 600;
+            }
+
+            .product-price {
+                font-size: 28px;
+            }
+        }
+    }
 }
 
