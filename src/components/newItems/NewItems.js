@@ -9,7 +9,7 @@ export default function Items() {
 
 
     React.useEffect(() => {
-        fetch('https://63064d8cdde73c0f8457f06d.mockapi.io/newItems')
+        fetch('https://63064d8cdde73c0f8457f06d.mockapi.io/hairBand')
         .then((res) => {
             return res.json();
         })

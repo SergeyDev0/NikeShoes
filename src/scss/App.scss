@@ -146,6 +146,8 @@ body{
                 &-img{
                     margin-top: 29px;
                     pointer-events: none;
+                    border-radius: 65px 20px 20px;
+                    margin-bottom: 8px;
                 }
 
                 &::after{
@@ -255,6 +257,10 @@ body{
             background-color: white;
             border-radius: var(--border);
             box-sizing: content-box;
+
+            img {
+                border-radius: var(--border);
+            }
 
             &:not(:last-child) {
                 margin-bottom: 16px;

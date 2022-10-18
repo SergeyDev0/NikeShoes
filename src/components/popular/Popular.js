@@ -8,7 +8,7 @@ export default function Cards() {
     const [products, setProducts] = React.useState([]);
 
     React.useEffect(() => {
-        fetch('https://63064d8cdde73c0f8457f06d.mockapi.io/items')
+        fetch('https://63064d8cdde73c0f8457f06d.mockapi.io/hairBand')
         .then((res) => {
             return res.json();
         })

@@ -33,10 +33,11 @@ const App = () => {
   }
 
   function incrementCounter() {
-      setCounter(counter + 1);
-      if(counter >= 99){
-          setCounter(99);
-      }
+    setCounter(counter + 1);
+    
+    if(counter >= 99){
+        setCounter(99);
+    }
   }
 
   return(
