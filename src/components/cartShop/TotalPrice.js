@@ -15,7 +15,6 @@ const TotalPrice = () => {
             <button className="checkout-button">Заказать</button>
         </div>
     )
-    
 }
 
 export default TotalPrice;
