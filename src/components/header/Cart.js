@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import menuIcon from '../../icons/menu.svg'
+import shoppingCartIcon from '../../icons/shopping-cart.svg'
 
 const Cart = () => {
     return (
         <Link to='cart'>
             <button className="header-menu">
-                <img src={menuIcon} alt="menu" />
+                <img src={shoppingCartIcon} alt="cart" />
             </button>
         </Link>
     )

@@ -2,7 +2,7 @@ import React from 'react';
 import { useLocation } from "react-router";
 import Cart from './Cart';
 import Logo from './Logo';
-import Notifications from './Notifications';
+import HeaderCatalog from './HeaderCatalog';
 import InputBar from './InputBar';
 import Filter from './Filter';
 import Back from './Back';
@@ -17,9 +17,9 @@ const Header = () => {
         return(
             <header className='header'>
                 <div className="header-top">
-                    <Cart />
+                    <HeaderCatalog />
                     <Logo />
-                    <Notifications />
+                    <Cart />
                 </div>
                 <div className="header-bottom">
                     <InputBar />
@@ -34,6 +34,14 @@ const Header = () => {
                     <Back />
                     <CartLogo />
                     <ClearCart />
+                </div>
+            </header>
+        )
+    } else if(pathname === "/catalog") {
+        return(
+            <header className='header'>
+                <div className="header-top">
+                    <Back />
                 </div>
             </header>
         )

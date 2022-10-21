@@ -318,13 +318,15 @@ body{
         .checkout-button {
             width: 100%;
             height: 50px;
-            text-align: center;
+            align-items: center;
+            justify-content: center;
             background-color: var(--black);
             border-radius: var(--border);
             color: #fff;
             font-size: 18px;
             font-weight: 700;
             margin-top: 50px;
+            display: flex;
         }
     }
 
