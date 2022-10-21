@@ -20,7 +20,7 @@ const NewItem = ({ img, alt, title, price, ratting, onPlus }) => {
             <img width={106} height={80} src={img} alt={alt} className="item-img" />
             <div className="wrapper__item-info">
                 <h5 className="title">{title}</h5>
-                <h4 className="price">${price}</h4>
+                <h4 className="price">{price} ₽</h4>
             </div>
             <div className="wrapper__item-panel">
                 <button className={`${isLike === true ? "like active" : "like"}`}

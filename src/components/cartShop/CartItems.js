@@ -18,7 +18,7 @@ export default function CartItems() {
                                     <h4 className="ratting">Ratting {item.ratting} <img src={star} alt="star" /></h4>
                                 </div>
                                 <div className="row">
-                                    <div className="price">${item.price}</div>
+                                    <div className="price">{item.price} ₽</div>
                                     <Counter />
                                 </div>
                             </div>

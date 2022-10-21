@@ -11,7 +11,7 @@ const ProductInfo = () => {
                     <div className="product__profile-info">
                         <div className="row">
                             <h2 className="product-title">{item.title}</h2>
-                            <h3 className="product-price">${item.price}</h3>
+                            <h3 className="product-price">{item.price} ₽</h3>
                         </div>
                         <p className="product-ratting">ratting {item.ratting} <img src={star} alt="star" /></p>
                     </div>
