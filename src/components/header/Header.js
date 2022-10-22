@@ -32,7 +32,7 @@ const Header = () => {
             <header className='header'>
                 <div className="header-top">
                     <Back />
-                    <CartLogo />
+                    <h1 className="header__cart-logo">Корзина</h1>
                     <ClearCart />
                 </div>
             </header>
@@ -42,6 +42,7 @@ const Header = () => {
             <header className='header'>
                 <div className="header-top">
                     <Back />
+                    <h1 className="header__cart-logo">Каталог</h1>
                 </div>
             </header>
         )

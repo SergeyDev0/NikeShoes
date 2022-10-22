@@ -1,7 +1,7 @@
 
 const HeaderNewItems = () => {
     return(
-        <h2 className="title">New Items</h2>
+        <h2 className="title">Новые товары</h2>
     )
 }
 

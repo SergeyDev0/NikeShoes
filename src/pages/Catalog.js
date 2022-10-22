@@ -1,8 +1,14 @@
 import Header from "../components/header/Header";
+import CatalogItem from "../components/catalog/CatalogItem";
 
 const Catalog = () => {
     return(
-        <Header />
+        <>
+            <Header />
+            <div className="catalog-list">
+                <CatalogItem></CatalogItem>
+            </div>
+        </>
     )
 }
 
