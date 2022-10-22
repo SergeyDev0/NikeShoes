@@ -57,6 +57,7 @@ body{
         width: 100%;
         display: flex;
         align-items: center;
+        position: relative;
 
         .search {
             height: 100%;
@@ -68,11 +69,25 @@ body{
             -o-border-radius: var(--border);
             flex-grow: 1;
             padding: 0 0 0 18px;
+            font-size: 16.5px;
+
+            &-icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                padding: 0 .8rem 0 .4rem;
+                margin: auto;
+                z-index: 9999;
+                border-bottom-right-radius: var(--border);
+                border-top-right-radius: var(--border);
+            }
 
             &::placeholder {
                 color: rgba(45, 41, 66, 0.5);
                 font-family: 'Poppins', sans-serif;
                 font-weight: 400;
+                font-size: 16.5px;
             }
         }
     }

@@ -4,9 +4,7 @@ import Cart from './Cart';
 import Logo from './Logo';
 import HeaderCatalog from './HeaderCatalog';
 import InputBar from './InputBar';
-import Filter from './Filter';
 import Back from './Back';
-import CartLogo from './CartLogo';
 import ClearCart from './ClearCart';
 import Like from './Like';
 
@@ -23,7 +21,6 @@ const Header = () => {
                 </div>
                 <div className="header-bottom">
                     <InputBar />
-                    <Filter />
                 </div>
             </header>
         )
