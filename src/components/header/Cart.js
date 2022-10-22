@@ -4,7 +4,7 @@ import shoppingCartIcon from '../../icons/shopping-cart.svg'
 
 const Cart = () => {
     return (
-        <Link to='cart'>
+        <Link to='/cart'>
             <button className="header-menu">
                 <img src={shoppingCartIcon} alt="cart" />
             </button>

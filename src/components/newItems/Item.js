@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import addCartNewIcon from '../../icons/addCartNew.svg';
 
-const NewItem = ({ img, alt, title, price, ratting, onPlus }) => {
+const NewItem = ({ img, alt, title, price, ratting, onPlus, onProduct }) => {
 
     const [isAdded, setIsAdded] = React.useState(false);
     const [isLike, setIsLike] = React.useState(false);
@@ -15,8 +16,12 @@ const NewItem = ({ img, alt, title, price, ratting, onPlus }) => {
         setIsLike(!isLike);
     }
 
+    const onClickProduct = () => {
+        onProduct({ img, alt, title, price, ratting })
+    }
+
     return(
-        <div className="item-card">
+        <Link to="product" className="item-card" onClick={onClickProduct}>
             <img width={106} height={80} src={img} alt={alt} className="item-img" />
             <div className="wrapper__item-info">
                 <h5 className="title">{title}</h5>
@@ -43,7 +48,7 @@ const NewItem = ({ img, alt, title, price, ratting, onPlus }) => {
                     <img src={addCartNewIcon} alt="add cart" />
                 </button>
             </div>
-        </div>
+        </Link>
     )
 }
 

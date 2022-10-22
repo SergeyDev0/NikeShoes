@@ -4,7 +4,7 @@ import { CartContext } from './../../App';
 import Item from './Item.js'; 
 
 export default function Items() {
-    const { onAddToCart } = React.useContext(CartContext);
+    const { onAddToCart, showProduct } = React.useContext(CartContext);
     const [products, setProducts] = React.useState([]);
 
 
@@ -31,7 +31,8 @@ export default function Items() {
                         title={item.title}
                         price={item.price}
                         ratting={item.ratting}
-                        onPlus={(obj) => {onAddToCart(obj)}} />
+                        onPlus={(obj) => {onAddToCart(obj)}}
+                        onProduct={(obj) => {showProduct(obj)}} />
                     )
                 })}
             </ul>

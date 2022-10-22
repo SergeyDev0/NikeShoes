@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Cart from './pages/CartShop';
 import Product from './pages/Product';
 import Catalog from './pages/Catalog';
+import ResultCatalog from './pages/ResultCatalog';
 
 export const CartContext = React.createContext();
 
@@ -57,6 +58,7 @@ const App = () => {
           <Route path="cart" element={<Cart />} />
           <Route path="product" element={<Product />} />
           <Route path="catalog" element={<Catalog />} />
+          <Route path="result" element={<ResultCatalog />} />
         </Routes>
       </CartContext.Provider>
   )

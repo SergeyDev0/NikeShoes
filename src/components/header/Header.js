@@ -43,13 +43,23 @@ const Header = () => {
                 </div>
             </header>
         )
-    } else{
+    } else if (pathname === "/product") {
         return(
             <header className='header'>
                 <div className="header-top">
                     <Back />
                     <Logo />
                     <Like />
+                </div>
+            </header>
+        )
+    } else {
+        return (
+            <header className='header'>
+                <div className="header-top">
+                    <Back />
+                    <Logo />
+                    <Cart />
                 </div>
             </header>
         )

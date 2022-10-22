@@ -22,10 +22,10 @@ const ProductSlider = (img, alt) => {
                         disableOnInteraction: false
                     }}
                     >
-                        <SwiperSlide><img className='slide-img' src={item.img} alt={alt} /></SwiperSlide>
-                        <SwiperSlide><img className='slide-img' src={item.img} alt={alt} /></SwiperSlide>
-                        <SwiperSlide><img className='slide-img' src={item.img} alt={alt} /></SwiperSlide>
-                        <SwiperSlide><img className='slide-img' src={item.img} alt={alt} /></SwiperSlide>
+                        <SwiperSlide><div className="wrapper-slide"><img className='slide-img' src={item.img} alt={alt} /></div></SwiperSlide>
+                        <SwiperSlide><div className="wrapper-slide"><img className='slide-img' src={item.img} alt={alt} /></div></SwiperSlide>
+                        <SwiperSlide><div className="wrapper-slide"><img className='slide-img' src={item.img} alt={alt} /></div></SwiperSlide>
+                        <SwiperSlide><div className="wrapper-slide"><img className='slide-img' src={item.img} alt={alt} /></div></SwiperSlide>
                     </Swiper>
                 </div>
                 )

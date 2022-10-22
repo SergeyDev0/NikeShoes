@@ -59,6 +59,18 @@ body{
         align-items: center;
         position: relative;
 
+        &::after {
+            content: ' ';
+            position: absolute;
+            right: calc(1.2rem + 30px);
+            width: 1px;
+            height: 75%;
+            background-color: #E5E5E5;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
         .search {
             height: 100%;
             background-color: white;
@@ -76,7 +88,7 @@ body{
                 right: 0;
                 top: 0;
                 bottom: 0;
-                padding: 0 .8rem 0 .4rem;
+                padding: 0 .8rem 0 .7rem;
                 margin: auto;
                 z-index: 9999;
                 border-bottom-right-radius: var(--border);
@@ -484,9 +496,16 @@ body{
 
         .product__wrapper-slider {
 
+            .wrapper-slide {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
             .slide-img {
-                width: 318px;
+                width: auto;
                 height: 220px;
+                border-radius: var(--border);
             }
 
             .swiper-horizontal > .swiper-pagination-bullets {
