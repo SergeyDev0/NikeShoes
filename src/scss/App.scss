@@ -34,8 +34,8 @@ body{
         }
 
         .header-logo {
-            width: 37px;
-            height: 13px;
+            width: 128px;
+            height: auto;
         }
 
         .header__cart-logo{
@@ -594,6 +594,12 @@ body{
                 }
             }
         }
+    }
+
+    .catalog-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
     }
 }
 
