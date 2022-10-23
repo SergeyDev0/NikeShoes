@@ -39,7 +39,7 @@ const CardItem = ({ img, alt, title, price, ratting, onPlus, onProduct }) => {
                         </svg>
                     </button>
                 </div>
-                <img width={210} height={145} src={img} alt={alt} className="slide-img" loading="lazy" />
+                <img width={210} height={145} src={img} alt={alt} className="slide-img"  />
                 <div className="row">
                     <h2 className="price">{price} ₽</h2>
                     <button className="add-cart" 

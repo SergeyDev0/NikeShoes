@@ -20,7 +20,7 @@ const ResultCatalogItem = ({ img, alt, title, price, ratting, onPlus, onProduct 
     }
     return(
         <Link to="/product" onClick={onClickProduct}>
-            <img width={106} height={80} src={img} alt={alt} className="item-img" loading="lazy" />
+            <img width={106} height={80} src={img} alt={alt} className="item-img"  />
             <div className="wrapper__item-info">
                 <h5 className="title">{title}</h5>
                 <h4 className="price">{price} ₽</h4>
