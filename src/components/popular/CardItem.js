@@ -39,7 +39,7 @@ const CardItem = ({ img, alt, title, price, ratting, onPlus, onProduct }) => {
                         </svg>
                     </button>
                 </div>
-                <img width={210} height={145} src={img} alt={alt} className="slide-img" />
+                <img width={210} height={145} src={img} alt={alt} className="slide-img" loading="lazy" />
                 <div className="row">
                     <h2 className="price">{price} ₽</h2>
                     <button className="add-cart" 
@@ -47,7 +47,7 @@ const CardItem = ({ img, alt, title, price, ratting, onPlus, onProduct }) => {
                     event.preventDefault();
                     event.stopPropagation();
                     onClickPlus()}} >
-                        <img src={addCartIcon} alt="add cart" />
+                        <img width={40} height={40} src={addCartIcon} alt="add cart" />
                     </button>
                 </div>
             </Link>

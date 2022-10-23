@@ -22,7 +22,7 @@ const NewItem = ({ img, alt, title, price, ratting, onPlus, onProduct }) => {
 
     return(
         <Link to="product" className="item-card" onClick={onClickProduct}>
-            <img width={106} height={80} src={img} alt={alt} className="item-img" />
+            <img width={106} height={80} src={img} alt={alt} className="item-img" loading="lazy" />
             <div className="wrapper__item-info">
                 <h5 className="title">{title}</h5>
                 <h4 className="price">{price} ₽</h4>
@@ -45,7 +45,7 @@ const NewItem = ({ img, alt, title, price, ratting, onPlus, onProduct }) => {
                 event.stopPropagation();
                 onClickPlus()}}
                 >
-                    <img src={addCartNewIcon} alt="add cart" />
+                    <img width={18} height={18} src={addCartNewIcon} alt="add cart" />
                 </button>
             </div>
         </Link>

@@ -6,7 +6,7 @@ const Cart = () => {
     return (
         <Link to='/cart'>
             <button className="header-menu">
-                <img src={shoppingCartIcon} alt="cart" />
+                <img width={26} height={26} src={shoppingCartIcon} alt="cart" />
             </button>
         </Link>
     )

@@ -28,16 +28,6 @@ body{
         margin-bottom: 30px;
         position: relative;
 
-        .header-menu {
-            width: 26px;
-            height: 26px;
-        }
-
-        .header-logo {
-            width: 128px;
-            height: auto;
-        }
-
         .header__cart-logo{
             font-size: 20px;
             font-weight: 500;
@@ -136,11 +126,6 @@ body{
                 font-size: 18px;
                 font-weight: 600;
                 color: var(--black);
-            }
-    
-            .more {
-                height: 5px;
-                width: 20px;
             }
         }
 

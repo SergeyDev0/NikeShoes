@@ -11,7 +11,7 @@ export default function CartItems() {
                 {cartItems.map((item) => {
                     return (
                         <Link to="product" className="item" key={Math.random(2000)}>
-                            <img width={120} height={90} src={item.img} alt={item.alt} />
+                            <img width={120} height={90} src={item.img} alt={item.alt} loading="lazy" />
                             <div className="wrapper-content">
                                 <div className="wrapper-info">
                                     <h3 className="title">{item.title}</h3>
