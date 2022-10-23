@@ -40,6 +40,16 @@ body{
             width: 18px;
             height: 20px;
         }
+
+        .header__wrapper-logo {
+            position: relative;
+
+            .logo-bant {
+                position: absolute;
+                right: -2px;
+                bottom: 70%;
+            }
+        }
     }
 
     .header-bottom {
@@ -456,13 +466,6 @@ body{
         }
 
         header {
-
-            .header__wrapper-logo {     
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
-            }
 
             .like-product {
             width: 22px;
