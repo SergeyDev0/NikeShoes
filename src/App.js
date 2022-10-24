@@ -8,6 +8,8 @@ import ResultCatalog from './pages/ResultCatalog';
 
 export const CartContext = React.createContext();
 
+
+
 const App = () => {
   const [cartItems, setCartItems] = React.useState([]);
   const [productItem, setProductItem] = React.useState([]);
