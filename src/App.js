@@ -6,9 +6,8 @@ import Product from './pages/Product';
 import Catalog from './pages/Catalog';
 import ResultCatalog from './pages/ResultCatalog';
 
+
 export const CartContext = React.createContext();
-
-
 
 const App = () => {
   const [cartItems, setCartItems] = React.useState([]);
